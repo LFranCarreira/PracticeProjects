@@ -3,7 +3,15 @@
 // What is the largest prime factor of the given number?
 
 function largestPrimeFactor(number) {
-  return true;
+  let largestFactor = number;
+  for (let i = 2; i <= Math.sqrt(largestFactor); i++) {
+    if (!(largestFactor % i)) {
+      let factor = largestFactor / i;
+      let candidate = largestPrimeFactor(factor);
+      return i > candidate ? i : candidate;
+    }
+  }
+  return largestFactor;
 }
 
 largestPrimeFactor(13195);
