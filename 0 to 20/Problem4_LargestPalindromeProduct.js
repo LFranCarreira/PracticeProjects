@@ -22,5 +22,4 @@ function largestPalindromeProduct(n) {
 
   return maxPalindrome;
 }
-
 largestPalindromeProduct(3);
