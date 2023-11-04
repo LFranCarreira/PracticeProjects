@@ -17,7 +17,6 @@ function fiboEvenSum(n) {
     a = b;
     b = temp + b;
   }
-
   return evenSum;
 }
 
