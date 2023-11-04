@@ -13,7 +13,13 @@ function gcd(a, b) {
   return gcd(b, a % b);
 }
 function smallestMult(n) {
-  return true;
+  let maxLCM = 1;
+
+  //Getting the LCM in the range
+  for (let i = 2; i <= n; i++) {
+    maxLCM = lcm(maxLCM, i);
+  }
+  return maxLCM;
 }
 
 smallestMult(20);
