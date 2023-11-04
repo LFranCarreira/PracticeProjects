@@ -7,7 +7,6 @@ function multiplesOf3and5(number) {
       multiples += i;
     }
   }
-  console.log(multiples);
   return multiples;
 }
 
