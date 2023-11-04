@@ -13,5 +13,4 @@ function largestPrimeFactor(number) {
   }
   return largestFactor;
 }
-
 largestPrimeFactor(13195);
