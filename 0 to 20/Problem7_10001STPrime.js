@@ -3,7 +3,8 @@
 // What is the nth prime number?
 
 function nthPrime(n) {
-  return true;
+  //Primes array which will store all the prime numbers
+  const primes = [2];
 }
 
 nthPrime(10001);
