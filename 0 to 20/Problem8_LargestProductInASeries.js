@@ -66,7 +66,11 @@ function largestProductinaSeries(n) {
     7, 1, 6, 3, 6, 2, 6, 9, 5, 6, 1, 8, 8, 2, 6, 7, 0, 4, 2, 8, 2, 5, 2, 4, 8,
     3, 6, 0, 0, 8, 2, 3, 2, 5, 7, 5, 3, 0, 4, 2, 0, 7, 5, 2, 9, 6, 3, 4, 5, 0,
   ];
-  return true;
+  let len = n;
+  let prod = 1,
+    max = 1;
+
+  return max;
 }
 
 largestProductinaSeries(13);
