@@ -69,7 +69,14 @@ function largestProductinaSeries(n) {
   let len = n;
   let prod = 1,
     max = 1;
-
+  while (len < thousandDigits.length) {
+    prod = 1;
+    for (let i = len - n; i < len; i++) {
+      prod *= thousandDigits[i];
+    }
+    if (prod > max) max = prod;
+    len++;
+  }
   return max;
 }
 
