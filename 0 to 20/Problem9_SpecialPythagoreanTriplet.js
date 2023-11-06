@@ -8,7 +8,9 @@
 function specialPythagoreanTriplet(n) {
   let sumOfabc = n;
   for (let a = 1; a < n; a++) {
-    for (let b = a; b < n; b++) {}
+    for (let b = a; b < n; b++) {
+      let c = n - a - b;
+    }
   }
 }
 
