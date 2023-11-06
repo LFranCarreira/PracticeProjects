@@ -7,8 +7,9 @@
 
 function specialPythagoreanTriplet(n) {
   let sumOfabc = n;
-
-  return true;
+  for (let a = 1; a < n; a++) {
+    for (let b = a; b < n; b++) {}
+  }
 }
 
 specialPythagoreanTriplet(1000);
