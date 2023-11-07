@@ -37,3 +37,6 @@ const testGrid = [
 ];
 
 largestGridProduct(testGrid);
+
+// largestGridProduct(testGrid) should return 14169081.
+// largestGridProduct(testGrid) should return a number
