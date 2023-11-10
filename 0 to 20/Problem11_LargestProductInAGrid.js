@@ -33,6 +33,10 @@ function largestGridProduct(arr) {
       return (maxProd = n);
     }
   }
+
+  for (let rows = 0; rows < arr.length; r++) {
+    for (let columns = 0; c < arr[r].length; c++) {}
+  }
 }
 
 const testGrid = [
