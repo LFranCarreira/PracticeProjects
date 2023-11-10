@@ -25,7 +25,14 @@
 // What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in a given arr grid?
 
 function largestGridProduct(arr) {
-  return true;
+  let maxProd = 0;
+  let currProd = 0;
+
+  function isMaxProduct(n) {
+    if (n > maxProd) {
+      return (maxProd = n);
+    }
+  }
 }
 
 const testGrid = [
