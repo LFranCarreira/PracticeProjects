@@ -35,7 +35,7 @@ function largestGridProduct(arr) {
   }
 
   for (let rows = 0; rows < arr.length; r++) {
-    for (let columns = 0; c < arr[r].length; c++) {}
+    for (let columns = 0; columns < arr[rows].length; columns++) {}
   }
 }
 
