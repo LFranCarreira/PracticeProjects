@@ -2,3 +2,32 @@
 
 // Symmetric difference is a binary operation, which means it operates on only two elements. So to evaluate an expression involving symmetric differences among three elements (A △ B △ C), you must complete one operation at a time. Thus, for sets A and B above, and C = {2, 3}, A △ B △ C = (A △ B) △ C = {1, 4} △ {2, 3} = {1, 2, 3, 4}.
 
+function sym() {
+  const args = [];
+  for (let i = 0; i < arguments.length; i++) {
+    args.push(arguments[i]);
+  }
+
+  function symDiff(arrayOne, arrayTwo) {
+    const result = [];
+
+    arrayOne.forEach(function (item) {
+      if (arrayTwo.indexOf(item) < 0 && result.indexOf(item) < 0) {
+        result.push(item);
+      }
+    });
+
+    arrayTwo.forEach(function (item) {
+      if (arrayOne.indexOf(item) < 0 && result.indexOf(item) < 0) {
+        result.push(item);
+      }
+    });
+
+    return result;
+  }
+
+  // Apply reduce method to args array, using the symDiff function
+  return args.reduce(symDiff);
+}
+
+sym([1, 2, 3], [5, 2, 1, 4]);
