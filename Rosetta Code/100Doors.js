@@ -3,6 +3,12 @@
 // Implement a function to determine the state of the doors after the last pass. Return the final result in an array, with only the door number included in the array if it is open.
 function getFinalOpenedDoors(numDoors) {
   let doors = [];
-
+  let i = 1;
+  let ii = i * i;
+  while (ii <= numDoors) {
+    doors.push(ii);
+    i++;
+    ii = i * i;
+  }
   return doors;
 }
