@@ -12,3 +12,4 @@ function getFinalOpenedDoors(numDoors) {
   }
   return doors;
 }
+getFinalOpenedDoors(100);
