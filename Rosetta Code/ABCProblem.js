@@ -50,4 +50,11 @@ function canMakeWord(word) {
     ['P', 'C'],
     ['Z', 'M'],
   ];
+  word = word.toUpperCase().split('');
+  for (let letter in word) {
+    // We should check if any block contains the desired letter
+  }
 }
+
+canMakeWord('BADM');
+canMakeWord('BBSA');
