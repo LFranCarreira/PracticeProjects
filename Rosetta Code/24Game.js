@@ -15,3 +15,7 @@
 // solve24("1234");	3*1*4*2
 // solve24("6789");	(6*8)/(9-7)
 // solve24("1127");	(1+7)*(2+1)
+
+function solve24(numStr) {
+  return true;
+}
