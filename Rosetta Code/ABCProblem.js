@@ -53,8 +53,17 @@ function canMakeWord(word) {
   word = word.toUpperCase().split('');
   for (let letter in word) {
     // We should check if any block contains the desired letter
+    const blockIndex = blocks.findIndex(
+      (block) => block.indexOf(word[letter]) >= 0
+    );
+    if (blockIndex === -1) {
+      return false;
+    } else {
+      blocks.splice(blockIndex, 1);
+    }
   }
+  return true;
 }
 
-canMakeWord('BADM');
-canMakeWord('BBSA');
+console.log(canMakeWord('BADM'));
+console.log(canMakeWord('BSBS'));
