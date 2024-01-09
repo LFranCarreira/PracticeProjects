@@ -28,9 +28,9 @@ function sentTimes(numberOfPorts, transmissionTime, packetIds) {
 
 // Example usage
 let numberOfPorts = 5;
-let transmissionTime = 5;
+let transmissionTime = 4;
 let packetIds = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 12, 14, 15, 18, 16, 17, 20, 19,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 12, 14, 15, 18, 16, 17, 22, 20, 19,
 ];
 let result = sentTimes(numberOfPorts, transmissionTime, packetIds);
 console.log(result);
