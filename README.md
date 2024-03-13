@@ -1,1 +1,1 @@
-# ProjectEuler
+# Practice Projects
